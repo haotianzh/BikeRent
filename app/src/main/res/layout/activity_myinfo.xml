@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/imageview_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/hmulogo" />
+
+        <ImageView
+            android:id="@+id/mybike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/iconsmall" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/runbikelinear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/hmuinner"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/runbike"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/app" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/order"
+                android:drawableRight="@drawable/arrow"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="  我的订单"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/info"
+                android:drawableRight="@drawable/arrow"
+                android:onClick="showMyInfo"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="  我的信息"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/shoppingcart"
+                android:drawableRight="@drawable/arrow"
+                android:onClick="myinfo2cart"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="  我的购物车"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/edit"
+                android:drawableRight="@drawable/arrow"
+                android:onClick="editMyAddress"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="  编辑公寓地址"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/password"
+                android:drawableRight="@drawable/arrow"
+                android:onClick="updateMyPassword"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="  修改密码"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/update"
+                android:drawableRight="@drawable/arrow"
+                android:onClick="checkForUpdate"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="  检查更新"
+                android:textAlignment="viewStart" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="#b22222"
+                android:onClick="logoutMyAccount"
+                android:text="注销当前用户"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

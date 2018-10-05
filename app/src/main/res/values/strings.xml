@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HMU\n租车平台</string>
+    <string name="zhuce"><u>没有账号？现在去注册</u></string>
+    <string name="title_activity_my_info">MyInfoActivity</string>
+
+    <string name="open">Open drawer</string>
+    <string name="close">Close drawer</string>
+
+    <string name="action_settings">退出登录</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="warning1">请认真填写个人信息，并保证信息的准确性</string>
+    <string name="warning2">注册之后除地址外不可更改！</string>
+    <string name="forgot"><u>忘记密码了？</u></string>
+    <string name="howtogetpwd">    目前最好的方式就是联系管理员啦。\n qq: 2057712412 \n 手机：18845075855 \n  qq留言或者手机短信编辑（姓名及新密码）\n 我们将尽快为您更改密码 \n  如果急需的请电话联系喽！</string>
+</resources>
